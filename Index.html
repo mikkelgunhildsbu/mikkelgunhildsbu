@@ -26,6 +26,10 @@
     .nav:hover{
         color: bisque;
     }
+    #picSlide{
+        margin-top: 0.5%;
+
+    }
 
 
 </style>
@@ -37,20 +41,35 @@
     <a class="nav" href="">Thing 4</a>
 </header>
 <div id="slider">
-    <p>"hello"</p>
+    <img src="bilder/Bilde%2007.03.2020,%2023%2052%2057.jpg" id="picSlide" alt="" height="300" width="80%" align="center">
 
 </div>
-<button id="sliderbutton">Left</button>
-<button id="sliderbutton2">Right</button>
+<button id="sliderbutton" onclick="buttonLeft()">Left</button>
+<button id="sliderbutton2" onclick="buttonRight()">Right</button>
 </body>
 <script>
-    const slider = document.getElementById("slider").innerHTML;
-    const sliderbutton = document.getElementById("sliderbutton").innerHTML;
-    const sliderbutton2 = document.getElementById("sliderbutton2").innerHTML;
-    const sliderArray = ["bilder/Bilde%2007.03.2020,%2023%2052%2057.jpg","fam.jpg","hjuyih.jpg" ]
-    i = 0
-    x = sliderArray[0]
-    slider.innerHTML = <img src=x alt="">
+    const slider = document.getElementById("slider");
+    const sliderbutton = document.getElementById("sliderbutton");
+    const sliderbutton2 = document.getElementById("sliderbutton2");
+    const sliderArray = ["bilder/Bilde%2007.03.2020,%2023%2052%2057.jpg","bilder/fam.jpg","bilder/hjuyih.jpg" ]
+    const pic = document.getElementById("picSlide")
+    i = 0;
+
+    function buttonLeft(){
+
+    }
+    function buttonRight(){
+        if (i<=1){
+            i++
+            pic.src = sliderArray[i]
+        }else {
+            i++
+            pic.src = sliderArray[i]
+            i = -1;
+        }
+
+    }
+
 
 
 
