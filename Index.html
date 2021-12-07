@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HomePage</title>
+</head>
+<style>
+    body{
+        background-color: aliceblue;
+    }
+    header{
+        padding: 50px;
+        background-color: rgba(255, 127, 80, 0.49);
+        margin-top: -20px;
+        margin-left: -20px;
+        margin-right: -20px;
+
+    }
+    .nav{
+        margin-left: 15%;
+        color: aliceblue;
+        text-decoration: none;
+        font-size: 20px;
+
+    }
+    .nav:hover{
+        color: bisque;
+    }
+
+
+</style>
+<body>
+<header>
+    <a class="nav" href="">Thing</a>
+    <a class="nav" href="">Thing 2</a>
+    <a class="nav" href="">Thing 3</a>
+    <a class="nav" href="">Thing 4</a>
+</header>
+<div id="slider">
+
+</div>
+<button id="sliderbutton">Left</button>
+<button id="sliderbutton2">Right</button>
+</body>
+<script>
+    const slider = document.getElementById("slider").innerHTML;
+    const sliderbutton = document.getElementById("sliderbutton").innerHTML;
+    const sliderbutton2 = document.getElementById("sliderbutton2").innerHTML;
+    const sliderArray = ["bilder/Bilde%2007.03.2020,%2023%2052%2057.jpg","fam.jpg","hjuyih.jpg" ]
+    i = 0
+    x = sliderArray[0]
+    slider.innerHTML = <img src=x alt="">
+
+
+
+</script>
+</html>
